@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/9753/dinosaur.jpg" width="60%" alt="No Image Provided">
+    <img src="./leoO.jpeg" width="400px" alt="No Image Provided">
+    <picture>
+        <source media="(min-width : 650px)" srcset="./book-cover2.png" />
+        <source media="(min-width : 400px)" srcset="./leo.jpeg"/>
+        <img src="./book-cover.png" alt="No image">
+    </picture>
+    <!-- IMAGE MAP GENERATOR -->
+    <img src="leo.jpeg" usemap="#image-map">
+
+    <map name="image-map">
+    <area onclick=" one()" target="" alt="" title="" href="" coords="74,63,426,413" shape="rect">
+    </map>
+
+    <SCRIPT>
+        function one(){
+            alert("You have clicked on the map")
+        }
+    </SCRIPT>
+
+</body>
+</html>
